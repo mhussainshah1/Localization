@@ -20,16 +20,17 @@ public class MyLocale {
         Locale l1 = new Locale.Builder()
                 .setLanguage("hi")
                 .setRegion("IN")
-                .build();
+                .build(); //hi_IN
 
         Locale l2 = new Locale.Builder()
                 .setRegion("IN")
                 .setLanguage("hi")
-                .build();
+                .build(); //hi_IN
 
-        //set locale
+        //set local
         locale = new Locale("fr");
         Locale.setDefault(locale);
-        System.out.println(Locale.getDefault());//fr
+        System.out.println(Locale.getDefault());
+
     }
 }

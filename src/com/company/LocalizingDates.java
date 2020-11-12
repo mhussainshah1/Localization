@@ -7,9 +7,11 @@ import java.time.format.FormatStyle;
 import java.util.Locale;
 
 public class LocalizingDates {
+
     public static void print(DateTimeFormatter dtf, LocalDateTime dateTime, Locale locale){
         System.out.println(dtf.format(dateTime) + ", " + dtf.withLocale(locale).format(dateTime));
     }
+
     public static void main(String[] args) {
         Locale.setDefault(new Locale("en","US"));
         var italy = new Locale("it","IT");
