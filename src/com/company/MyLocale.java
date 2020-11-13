@@ -31,6 +31,5 @@ public class MyLocale {
         locale = new Locale("fr");
         Locale.setDefault(locale);
         System.out.println(Locale.getDefault());
-
     }
 }
